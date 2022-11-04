@@ -8,8 +8,10 @@
 header{
     background-color: #FF6900;
     width: 100%;
-    height: 80px; 
-    color: #fff;
+    height: 60px; 
+    color: #fff; 
+    position: fixed;
+    z-index: 5;
     
 }  
 /*utilities*/ 
@@ -33,6 +35,9 @@ header{
     margin-top: 70px;
 }
 
+.row{
+    margin-top: 50px;
+}
 /* Navbar*/ 
  
 a{
@@ -41,13 +46,16 @@ a{
 
     margin-left: 10px;
 }
+.container{
+    width: 70%;
+    height: 100%; 
+    margin: 0 auto;
+}
 .head{
     display: flex;
     align-items: center; 
     justify-content: center;
-    width: 70%;
-    height: 100%; 
-    margin: 0 auto;
+   
 
 }
  
@@ -92,7 +100,11 @@ img{
 .ecology{
     background-color: #008000; 
     left:50px;
-} 
+}  
+
+.ecology.ahed{
+    left: 0;
+}
 
 .brand{
     font-size: 12px;
@@ -123,15 +135,19 @@ img{
     color: red; 
 } 
 
-.card:hover::after{
-    content: '';
-    background-image: url(../img/1b.webp); 
-    background-size: cover;
-    position: absolute; 
-    size: 100%;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+.second-img{ 
+    display: none;
+
+} 
+
+.card:hover .second-img{ 
+    display: block; 
+
     
-}
+} 
+ 
+.card:hover .first-img{ 
+    display: none; 
+
+    
+} 
