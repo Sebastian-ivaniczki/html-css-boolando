@@ -42,13 +42,31 @@ body{
 .row{
     margin-top: 50px;
 }
-/* Navbar*/ 
 .flex-center{
     display: flex;
     justify-content: center;
     align-items: center;
 }  
+.right{
+    justify-content: right;
+}
+ 
+i{ 
+    margin-top: 13px;
+    margin-right: 10px;
 
+   }
+
+.flex-align{
+    display: flex; 
+    align-items: center;
+    
+}
+ul{
+    list-style-type: none; 
+}
+    
+/* Navbar*/ 
 .navbar{
     margin-top: 22px;
 }
@@ -57,21 +75,12 @@ a{
     text-decoration: none;
     color: #fff; 
 
-    margin-left: 10px;
+    margin-right: 10px;
 }
 .container{
     width: 70%;
     height: 100%; 
     margin: 0 auto;
-}
-
-   
-
-
- 
-i{ 
-    margin-top: 13px;
-    margin-right: 10px;
 }
 .logo-img{
     width: 130px; 
@@ -102,7 +111,9 @@ img{
     bottom: 70px;
     color: #fff; 
     
-}
+} 
+
+/*target info*/
 .discount{
     background-color: rgb(255, 0, 0); 
     left: 0;
@@ -125,14 +136,12 @@ img{
     font-size: 12px;
 } 
  
-.discounted{
-    color: red;
-} 
+
 
 .original{
  text-decoration: line-through;
 } 
-
+ /*hover elements*/
 .heart{ 
     background-color: #fff;
     position: absolute;
@@ -161,4 +170,33 @@ img{
     display: none; 
 
     
+}  
+
+/*footer*/
+
+footer{
+    height: 100px;
+    background-color: #000; 
+    color: #fff; 
+    margin-top: 30px;
 } 
+.foot-left, .foot-right{
+    width: 50%;
+    display: inline-block;
+    padding-top: 25px;
+}
+.foot-right{
+    display: flex;
+    align-items: flex-end; 
+    flex-direction: column;
+    
+}
+
+h3{ 
+    margin-bottom: 12px; 
+    font-size: 20px;
+} 
+
+.foot-brands{
+    margin-top: 12px;
+}
